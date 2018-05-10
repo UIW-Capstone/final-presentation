@@ -1,0 +1,392 @@
+body {
+ 	font: 400 15px/1.8 Lato, sans-serif;
+    color: #666666;
+  }
+  h3 {
+  	margin: 10px 0 30px 0;
+    letter-spacing: 8px;      
+    font-size: 22px;
+    color: #111;
+  } 
+  h4{font-size:20px}
+  h5 {
+  	font-size:18px;
+  	color: #111 !important;
+  	font-weight: bold;
+  }
+  h6{font-size:16px}
+  
+  .container { 
+      padding: 60px 80px 0 80px;
+  }
+  .ind-grd {
+  	  background: linear-gradient(to bottom, #ffffff 20%, #cccccc 100%);
+  }
+  .city { /* background color of city image in the footer!! gradient blends .ind-grd */
+  	  background: linear-gradient(to bottom, #cccccc 0%, #b3b3b3 100%);
+  }
+  .center-img {
+  	  display: block;
+      margin-left: auto;
+      margin-right: auto;
+      z-index:1;
+  }
+  .main{
+  	  background: linear-gradient(to bottom, #ffffff 30%, #bfbfbf 100%);
+  	  padding: 50px 120px;
+  }
+  .carousel-inner img {
+      width: 100%; 
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  .center {
+  	  text-align: center;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+    .main{
+      padding: 40px 60px;
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-grey {
+  	  background-color: #F6F6F6;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .prlximg1, .prlximg2, .prlximg3 {
+  	  position: relative;
+	  opacity: 0.65;
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+  }
+  .prlximg1 {
+  	  background-image:url('../img/jb1.png');
+  	  min-height: 400px;
+  }
+  .prlximg2 {
+  	  background-image:url('../img/cis.png');
+  	  min-height: 400px;
+  }
+  .prlximg3 {
+  	  background-image:url('../img/cyber2.png');
+  	  min-height: 400px;
+  }
+  @media (min-width: 581px) {
+    .prlximg1, .prlximg2, .prlximg3 {
+      margin-top: 60px;
+    }
+  }
+  .cap {
+	  position: absolute;
+	  top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+	  width: 100%;
+	  text-align: center;
+	  color: #000;
+  }
+  .cap span.border {
+	  padding: 18px;
+  	  font-size: 25px;
+ 	  letter-spacing: 10px;
+  }
+  
+ /* ------------------------- image thumbnails -----------------------------*/ 
+  .thumbnail {
+  	  right: 0;
+  	  align: right;
+  	  position: relative;
+      border: none;
+      border-radius: 0;
+      box-shadow: 5px 0px 30px rgba(0,0,0, .7);
+      max-width: 260px;
+      margin: auto;
+      overflow:auto;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .thumbnail img{
+  	  width:100%;
+  	  margin: auto;
+  }
+  
+  .image {
+      opacity: 1;
+  	  display: block;
+  	  width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+  }
+  .middle {
+  	  transition: .5s ease;
+  	  opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%)
+  }
+  .thumbnail:hover .image {
+      opacity: 0.3;
+  }
+  .thumbnail:hover .middle {
+      opacity: 1;
+  }
+  .text {
+      background-color: #2D2D30;
+      color: white;
+      font-size: 16px;
+      padding: 15px 25px;
+  }
+  .text a {
+  	  color: white;
+  }
+  .left-box {
+ 	  margin-right: inherit;
+  }
+  .right-box {
+      border: none;
+      border-radius: 0;
+      right: 2%;
+      margin-top: 10px;
+      box-shadow: 5px 0px 30px rgba(0,0,0, .7);
+      z-index: -1;
+  }
+  .right-p {
+      padding: 0 15px;
+  }
+ /* ----------------------- login Page Modal --------------------------------- */
+  .modalform {
+      position: fixed; 
+      z-index: 101; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+      padding-top: 30px;
+  }
+  form {
+      border: 3px solid #f1f1f1;
+      background: white;
+      width: 50%;
+      margin: auto;
+  }
+  
+  #form-box{
+      border: black 1px;
+      z-index: 999 !important!;
+  }
+  .formContainer{
+  	  margin-top: 100px;
+  	  max-width: 450px;
+      text-align: center;
+      padding: 20px 50px;		
+  }
+  .error {color: #FF0000 !important;}
+  
+  /* student portfolio login form */
+  .flex-container{
+  	  display:flex;
+  	  background:blue;
+  }
+  .stdt_form{
+      width: 85% !important;
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
+  .stdt_fmContainer {
+  	  padding: 20px;
+  }
+  
+  .modal-header, h4, .close {
+  	  background: linear-gradient(to right, white, #e60000, white);
+      /* background-color: #333; */
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: black;
+  }
+  
+  /* JS sticks navbar in place at the top when scrolling */
+  .affix {
+      top: 0;
+      width: 100%;
+      z-index: 100 !important;
+      opacity: 0.9;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 20px;
+  }   
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      background: linear-gradient(to bottom, #660000 0%, #ff0000 100%); /*#BA141E;  UIW red */
+      border: 0;
+      border-radius: 0;
+      box-shadow: 5px 0px 40px rgba(0,0,0, .9); 
+      margin-bottom: 0;
+      z-index: 100 !important;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: white !important;
+      
+  }
+  .navbar-nav li a:hover {
+      color: black !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #cc0000 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  /* submenu */
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -6px;
+      margin-left: -1px;
+      -webkit-border-radius: 0 6px 6px 6px;
+      -moz-border-radius: 0 6px 6px;
+      border-radius: 0 6px 6px 6px;
+  } 
+  .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+  }
+	
+  .dropdown-submenu>a:after {
+	  display: block;
+	  content: " ";
+	  float: right;
+      width: 0;
+	  height: 0;
+	  border-color: transparent;
+	  border-style: solid;
+	  border-width: 5px 0 5px 5px;
+      border-left-color: #ccc;
+	  margin-top: 5px;
+	  margin-right: -10px;
+  }
+  .input-group {
+	  margin-bottom: 10px;
+  }
+  .panel-title {
+  	  color: red;
+  }
+  #mini-portf {
+ 	  width: 80%;
+ 	  object-fit:cover;
+ 	  max-height: 104px;
+  }
+  @media (max-width: 1199px) {
+    #mini-portf {
+      max-height: 80px !important;
+    }
+  }
+  /* -----------------------------Side Nav---------------------------- */
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 650px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 768px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+      .left-box {
+        margin-right: 0;
+      }
+      .right-box {
+        right: 0;
+        margin-top: -10px;
+      }
+      #mini-portf {
+        max-height: 200px !important;
+    }
+    }
+     @media screen and (max-width: 580px) {
+        .container {
+          padding: 60px;
+        }
+        .formContainer{
+		  margin-top: 20px;
+		  padding: 10px;
+		}
+     }
+    /* -----------------------------footer--------------------------------- */
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding-bottom:35px;
+  }
+  footer img {
+      width: 100%;
+  }
+  footer a {
+      color: red;
+  }
+  footer a:hover {
+      color: white;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  .copyr {
+  	  color: red;
+  }
